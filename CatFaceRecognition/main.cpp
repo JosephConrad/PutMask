@@ -40,9 +40,8 @@ pthread_t tid[2];
 int counter;
 pthread_mutex_t mutexx = PTHREAD_MUTEX_INITIALIZER;
 std::string imageName = "./images/pilot.jpg";
-const char* masks[] = {"batman", "bird", "carnival", "commandos", "horse", "monster", "oldman",
-                       "pig", "pilot", "tree", "venice", "spiderman"};
-std::vector<std::string> availableMasks(masks, masks + 12);
+const char* masks[] = {"pig","pilot", "vendetta"};
+std::vector<std::string> availableMasks(masks, masks + 3);
 bool stop = false;
 const char* modes[] = {"normal", "sepida", "gray"};
 std::vector<std::string> availableModes(modes, modes + 3);
